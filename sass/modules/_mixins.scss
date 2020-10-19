@@ -12,7 +12,7 @@
 	color: $colour;
 }
 
-// 按钮
+
 @mixin btnStyle($bg, $color, $border) {
 	background: $bg !important;
 	color: $color !important;

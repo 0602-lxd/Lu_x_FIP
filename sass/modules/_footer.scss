@@ -1,0 +1,47 @@
+.footer {
+	width: 100%;
+	height: 160px;
+	margin-top: 100px;
+	background: #000000;
+	color: #fff;
+}
+.footers_ {
+	width: 100%;
+	height: 160px;
+	background: #000000;
+	color: #fff;
+}
+.footerCon {
+	width: 90%;
+	height: 160px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.imgList {
+	img {
+		width: 64px;
+		height: 64px;
+		margin-left: 20px;
+	}
+}
+
+.mak_s {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 11;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+	img {
+		width: 500px;
+		height: 500px;
+	}
+}

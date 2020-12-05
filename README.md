@@ -23,6 +23,8 @@ Just clone the repo anywhere on your computer and create branches!
 * **HTML5**
 * **SASS/CSS**
 * **JavaScript**
+* **PHP**
+* **VUE.js**
 
 
 ## MIT License

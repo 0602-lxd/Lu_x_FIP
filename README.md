@@ -1,11 +1,21 @@
 # Lu_x_FIP
+Use everything we’ve learned so far, create a real dynamic portfolio. You can visit my website here.
 
 ## Description
 Hello, everyone! my name is xindi and this is my portfolio.This website contains all the projects I have done before and my introduction and experience.If you are interested, you can click in and have a look.
 
 
 ## Installation
-Describe the installation process
+Just clone the repo anywhere on your computer and create branches!
+
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
 
 ## Built with/Tools Used
@@ -40,5 +50,6 @@ SOFTWARE.
 
 
 ## Future Plan
-Describe what I want to improve the website.
-What i need to improve
+1. The style of the website is not as good as what you want to do.
+2. Add some content to expand the homepage.
+3. You can add some animations to increase the fun.

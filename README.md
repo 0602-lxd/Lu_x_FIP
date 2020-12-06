@@ -1,3 +1,5 @@
+![header](images/logo.png "logo")
+
 # Lu_x_FIP
 Use everything we’ve learned so far, create a real dynamic portfolio. You can visit my website here.
 
@@ -27,6 +29,11 @@ Just clone the repo anywhere on your computer and create branches!
 * **VUE.js**
 
 
+## Author
+
+ Xindi Lu
+
+
 ## MIT License
 MIT License
 
@@ -54,4 +61,4 @@ SOFTWARE.
 ## Future Plan
 1. The style of the website is not as good as what you want to do.
 2. Add some content to expand the homepage.
-3. You can add some animations to increase the fun.
+3. Add some animations to increase the fun.

@@ -25,6 +25,326 @@
 			}
 		}
 	}
+
+	%title {
+		position: absolute;
+		width: 100%;
+
+		.titleCon {
+			width: 80%;
+			height: 60px;
+			display: flex;
+			margin: 0 auto;
+			align-items: center;
+			justify-content: space-between;
+
+			.titleLeft {
+				display: flex;
+				margin-left: 12vw;
+			}
+
+			.titleRight {
+				display: flex;
+
+				li {
+					list-style: none;
+
+					a {
+						margin-left: 5vw;
+						cursor: pointer;
+						color: #fff;
+						text-decoration: none;
+					}
+
+					a:hover {
+						color: pink;
+					}
+
+					a:active {
+						color: #ff5050;
+					}
+				}
+			}
+		}
+	}
+
+	%w60matuo {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	%lover {
+		color: $dark-color-ff8f20;
+		font-weight: 600;
+	}
+
+	.titleWrap {
+		position: relative;
+
+		.title {
+			@extend %title;
+		}
+
+		.titleImg {
+			width: 100%;
+			height: 97vh;
+			overflow: hidden;
+			background: url(../../images/banner.jpg) no-repeat center;
+			background-size: 100%;
+		}
+
+		.imgTxt {
+			width: 73%;
+			font-size: 30px;
+			color: #fff;
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			p {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.wrap_ {
+		background: #000000;
+		overflow: hidden;
+		color: #fff;
+		height: 500px;
+
+		.title {
+			@extend %title;
+		}
+
+		.introduces_ {
+			@extend %w60matuo;
+
+			.introduces_a {
+				color: $dark-color-ff5050;
+				font-size: 60px;
+				font-weight: bold;
+				margin-top: 120px;
+			}
+
+			.introduces_b {
+				color: #fff;
+				margin-bottom: 50px;
+				margin-top: -40px;
+				margin-left: 20px;
+			}
+
+			.on {
+				color: #fff;
+				margin-top: 20px;
+				font-size: 26px;
+				font-weight: 600;
+
+				.lover {
+					@extend %lover;
+				}
+			}
+
+			.introducesb {
+				margin-top: -4%;
+				margin-left: 20px;margin-bottom: 30px;
+			}
+		}
+
+		/* index2 */
+		.projectCon {
+			width: 100%;
+			color: #fff;
+			text-align: center;
+
+			.projec_ {
+				color: #363636;
+				font-size: 150px;
+				font-weight: 600;
+				margin-top: 7%;
+			}
+
+			.projectConCon_a {
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: -6%;
+			}
+
+			.projectConCon_b {
+				font-size: 20px;
+				margin-top: 20px;
+				color: #707070;
+				margin-bottom: 10%;
+			}
+		}
+	}
+
+	.Selfie {
+		@extend %w60matuo;
+		display: flex;
+		margin-top: 100px !important;
+		align-items: center;
+
+		.logo {
+			width: 30vw;
+			margin-right: 50px;
+		}
+
+		.SelfieTxt {
+			width: 60%;
+			color: #828282;
+		}
+
+		.SelfieTxt p {
+			margin-bottom: 20px;
+			line-height: 40px;
+		}
+	}
+
+	.Skills {
+		@extend %w60matuo;
+
+		.Skills_a {
+			font-size: 30px;
+			color: #000;
+			margin: 50px 0 30px 0;
+		}
+
+		.SkillsCon {
+			display: flex;
+			justify-content: space-between;
+
+			div {
+				width: 20%;
+				text-align: center;
+
+				img {
+					width: 60%;
+					border-radius: 40%;
+					margin-bottom: 15px;
+				}
+
+				p {
+					margin-left: 20px;
+					margin-top: 10px;
+				}
+			}
+
+			.SkillsCon_on {
+				font-size: 20px;
+				margin-bottom: 15px;
+				color: $dark-color-ff5050;
+				color: #ff5050;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.direcƟon {
+		@extend %w60matuo;
+
+		.direconTop {
+			margin-top: 50px;
+
+			.direconTop_a {
+				font-size: 30px;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+
+			.direconTop_b {
+				font-size: 20px;
+				margin-bottom: 50px;
+			}
+
+			.direconTop_c {
+				font-size: 30px;
+				margin-bottom: 20px;
+
+				.lover {
+					@extend %lover;
+				}
+			}
+		}
+
+		.direconBot {
+			font-size: 18px;
+
+			p {
+				margin-top: 5px;
+			}
+		}
+	}
+
+	.ready {
+		width: 100%;
+		height: 400px;
+		text-align: center;
+		overflow: hidden;
+		// background: url(../icon/phon2.jpg) center center no-repeat;
+		background-size: 100% 100%;
+
+		.ready_a {
+			margin-top: 8%;
+			font-size: 40px;
+			font-weight: bold;
+			color: #000;
+		}
+
+		.ready_b {
+			@include btnStyle(#fff, #000, #000);
+			width: 20%;
+			padding: 10px 0;
+			margin: 30px auto 0;
+			cursor: pointer;
+		}
+	}
+
+
+	.titleCons_ {
+		width: 80%;
+		height: 60px;
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.titleRights_ {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.titleLeft img {
+		width: 10vw;
+	}
+
+	/* .titleLeft>div>p:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+.titleLeft>div>p:nth-child(2){
+    font-size: 12px;
+    margin-top: -6px;
+} */
+	.titleRights_a {
+		margin-left: 30px;
+		cursor: pointer;
+		color: #141434;
+		text-decoration: none;
+	}
 }
 
 %w60matuo {
@@ -81,7 +401,7 @@
       color: $dark-color-ff5050;
 			font-size: 60px;
 			font-weight: bold;
-			margin-top: 50px;
+			margin-top: 120px;
 		}
 		.introduces_b {
 			color: #fff;
@@ -102,7 +422,7 @@
 		.introducesb {
 			margin-top: -4%;
 			margin-left: 20px;
-			margin-bottom: 10%;
+			margin-bottom: 30px;
 		}
 	}
 
@@ -137,7 +457,6 @@
 	margin-top: 100px !important;
 	.logo {
 		width: 360px;
-		height: 360px;
 		margin-right: 50px;
 	}
 	.SelfieTxt {
@@ -205,7 +524,6 @@
 	}
 	.direconBot {
 		font-size: 18px;
-		margin-bottom: 100px;
 		p {
 			margin-top: 5px;
 		}
@@ -214,7 +532,7 @@
 
 .ready {
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	text-align: center;
 	overflow: hidden;
 	// background: url(../icon/phon2.jpg) center center no-repeat;
@@ -275,4 +593,101 @@
 	cursor: pointer;
 	color: #141434;
 	text-decoration: none;
+}
+@media (max-width: 680px) {
+	.wrap_ .introduces_{
+		width: 90%;
+		margin: auto;
+		display: block;
+		.introduces_a{
+			font-size: 14vw;
+		}
+	}
+	.Skills {
+		width: 90%;
+		.SkillsCon{
+		display: block;
+		overflow: hidden;
+		>div{
+			float: left;
+			width: 50%;
+			height:300px;
+			img{
+				height: 40px;
+				width: auto;
+				margin: auto;
+				display: block;
+			}
+			p{
+				font-size: 12px;
+			}
+		}
+	}
+	}
+	.wrap_ .title .titleLeft img, .titleWrap .title .titleLeft img{
+		width: 20vw;
+	}
+	.wrap_{
+		.projectCon{
+			.projec_{
+				font-size: 20vw;
+				padding: 4vw 0;
+			}
+			.projectConCon{
+				.projectConCon_a{
+					font-size: 6vw;
+				}
+			}
+		}
+	}
+	.direcƟon{
+		width: 90%;
+		.direconTop,.direconTop  {
+			.direconTop_b,.direconTop_c{
+				font-size: 14px;
+			}
+
+		}
+			.direconBot{
+				margin-bottom: 30px;
+				p{
+					font-size: 14px;
+				}
+			}
+	}
+	#app .ready{
+		height: 210px;
+		.ready_a{
+			font-size: 24px;
+		}
+		.ready_b{
+			width: 80vw;
+		}
+	}
+}
+.titleWrap .imgTxt p{
+	animation:myfirst 5s infinite;
+	-webkit-animation:myfirst 5s infinite; /* Safari 和 Chrome */
+}
+@keyframes myfirst
+{
+  0% {
+ 
+    color: #fff;
+  }
+  25% {
+
+    color: red;
+  }
+  50% {
+ 
+    color: yellow;
+  }
+  75% {
+
+    color: blue;
+  }
+  100% {
+    color: #fff;
+  }
 }

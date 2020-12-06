@@ -1,0 +1,109 @@
+ @media(min-width: 1300px){
+    .titleImg {
+        height: 32vh ;
+        width: 100vw;
+        background: transparent url('./../images/banner.jpg') no-repeat top scroll;
+        background-size: cover;
+    }
+    .wrapImgs .centerImg{
+        width: 40%;   
+    }
+ }   
+@media(max-width: 1300px) {
+    .titleImg {
+        height: 32vh ;
+        width: 100vw;
+        background: transparent url('./../images/banner.jpg') no-repeat top scroll;
+        background-size: cover;
+    }
+
+    .titleWrap .imgTxt {
+        font-size: 40px ;
+        color: #fff ;
+    }
+
+    .introduceWrap .introduce h1 {
+        margin-top: 10px ;
+        font-size: 24px ;
+    }
+
+    .introduceWrap .introduce .introduceTxt {
+        margin: 10px auto ;
+        font-size: 13px ;
+        width: 100% ;
+        line-height: 26px ;
+    }
+
+    .introduceBut {
+        font-size: 12px ;
+        width: 64% ;
+        margin: 50px auto 50px ;
+    }
+
+
+    .Selfie {
+        width: 90% ;
+    }
+
+    .SelfieTxt p {
+        font-size: 14px;
+    }
+
+    .SkillsCon div {
+        width: 28% ;
+    }
+
+    .direcƟon .direconTop .direconTop_c {
+        font-size: 20px ;
+    }
+
+    .ready .ready_b {
+        width: 46vw ;
+    }
+
+    .wrap_ .introduces_ .on {
+        font-size: 20px ;
+    }
+    .wrapImgs .centerImg{
+        width: 80%;
+    }
+    .introduces_a {
+        font-size: 30px ;
+    }
+
+    .introduces_ {
+        margin-top: 112px ;
+    }
+
+}
+
+@media(max-width: 840px){
+    .titleWrap .titleImg {
+        height: 120vw;
+        width: 100vw;
+        background: transparent url(./../images/banner.jpg) no-repeat top scroll;
+        background-size: cover;
+    }
+    .titleWrap .imgTxt {
+        font-size:6vw;
+        font-weight: bold;
+        color: #fff ;
+    }
+    .Selfie{
+        display: block;
+        .logo{
+            width: 100%;
+            display: block;
+            margin: auto;
+            height: auto;
+        }
+        .SelfieTxt{
+            width: 100%;
+            display: block;
+            margin: auto;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

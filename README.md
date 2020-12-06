@@ -1,7 +1,7 @@
 ![header](images/logo.png "logo")
 
 # Lu_x_FIP
-Use everything we’ve learned so far, create a real dynamic portfolio. You can visit my website here.
+Use everything we’ve learned so far, create a real dynamic portfolio. You can visit my website luxindiiiiii.com
 
 ## Description
 Hello, everyone! my name is xindi and this is my portfolio.This website contains all the projects I have done before and my introduction and experience.If you are interested, you can click in and have a look.

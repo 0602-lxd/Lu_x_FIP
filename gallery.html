@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,124 +10,148 @@
 <!--	<link href="css/main.css" rel="stylesheet" type="text/css">-->
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
+
 <body style="margin: 0;">
 
-<div id="app">
-	<div class="viewBox" v-show="showView">
-		<div class="view">
-			<img src="./images/out.png"class="viewImg" @click="showView=false"/>
-			<div class="mycontent">
-				<div class="left">
-					<p class="title">YEAR</p>
-					<p>{{msgInfo.Year}}</p>
-				</div>
-				<div class="center">
-					<p class="title">DELIYEARABLES</p>
-					<p >{{msgInfo.Deliverables}}</p>
+	<div id="app">
+		<div class="viewBox" v-show="showView">
+			<div class="view">
+				<img src="./images/out.png" class="viewImg" @click="showView=false" />
+				<div class="mycontent">
+					<div class="left">
+						<p class="title">YEAR</p>
+						<p>{{msgInfo.Year}}</p>
+					</div>
+					<div class="center">
+						<p class="title">DELIYEARABLES</p>
+						<p>{{msgInfo.Deliverables}}</p>
 
-					<!-- <p>{{msgInfo.Deliverables}}</p>
+						<!-- <p>{{msgInfo.Deliverables}}</p>
 					<p>{{msgInfo.Category}}</p> -->
+					</div>
+					<div class="center">
+						<p class="title">TEAM</p>
+						<p>{{msgInfo.Team}}</p>
+					</div>
+					<div class="end">
+						<div class="title2">{{msgInfo.Title}}</div>
+						<p>{{msgInfo.Description}}</p>
+					</div>
 				</div>
-				<div class="center">
-					<p class="title">TEAM</p>
-					<p>{{msgInfo.Team}}</p>
-				</div>
-				<div class="end">
-					<div class="title2">{{msgInfo.Title}}</div>
-					<p>{{msgInfo.Description}}</p>
+
+				<div class="view_foot">
+					<img v-for="(imgItme,i) in imgList" :key="i" :src="'images/'+ imgItme" alt="">
+				</div><!-- v-show='imgItme.ProcessTitle!=""' -->
+				<div class="txtline btn-group" v-show='msgInfo.ProcessTitle!=""'>
+					<span class="tit">Process Title</span>
+					<div class="btn desc">{{msgInfo.ProcessTitle}}</div>
+				</div><!-- v-show='imgItme.ProcessDescription!=""' -->
+				<div class="txtline btn-group" v-show='msgInfo.ProcessDescription!=""'>
+					<span class="tit">Process Description</span>
+					<div class="btn desc">{{msgInfo.ProcessDescription}}</div>
+				</div><!-- v-show='imgItme.ProcessImg!=""' -->
+				<div class="txtline btn-group" v-show='showpng!=""'>
+					<span class="tit">Process img</span>
+					<div class="btn desc">
+						<img v-for="(imgItme,i) in showpng" :key="i" :src="'images/'+ imgItme" alt="">
+					</div>
 				</div>
 			</div>
-			<div class="view_foot">
-				<img v-for="(imgItme,i) in imgList" :key="i" :src="'images/'+ imgItme" alt="">
-			</div>
 		</div>
-	</div>
-	<div class="wrap_">
-		<header class="title">
-			<nav class="titleCon">
-				<div class="titleLeft">
-					<img src="images/logo.svg" alt="">
+		<div class="wrap_">
+			<header class="title">
+				<nav class="titleCon">
+					<div class="titleLeft">
+						<img src="images/logo.svg" alt="">
+					</div>
+					<ul class="titleRight">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="">GALLERY</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+					</ul>
+					<p class="lineNav" @click="clickLine">
+						☰
+					</p>
+				</nav>
+			</header>
+			<div class="projectCon">
+				<p class="projec_">PROJECT</p>
+				<div class="projectConCon">
+					<p class="projectConCon_a">PORTFOLIO PROJECT #1</p>
+					<p class="projectConCon_b">This portfolio is the best way to show my work, you can see here a big
+						range of my work.</p>
 				</div>
-				<ul class="titleRight">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="">GALLERY</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-				</ul>
-				<p class="lineNav" @click="clickLine">
-					☰
-				</p>
-			</nav>
-		</header>
-		<div class="projectCon">
-			<p class="projec_">PROJECT</p>
-			<div class="projectConCon">
-				<p class="projectConCon_a">PORTFOLIO PROJECT #1</p>
-				<p class="projectConCon_b">This portfolio is the best way to show my work, you can see here a big range of my work.</p>
+
 			</div>
-			
 		</div>
-	</div>
-	
-	<section>
-		<div class="listTitle">
-			<p class="listTitle_a">Website Projects</p>
-			<p class="listTitle_b">This is my portfolio, you can click different project!</p>
-		</div>
-		<div class="list">
 
-				<card  v-for="item in portfolio"  v-bind:card="item" @check="checkCard" @click="checkCenter(card)"></card>
+		<section>
+			<div class="listTitle">
+				<p class="listTitle_a">Website Projects</p>
+				<p class="listTitle_b">This is my portfolio, you can click different project!</p>
+			</div>
+			<div class="list">
 
-<!-- 				<div class="listImg" v-for="item in portfolio" :key="item.ID" @click="checkCenter(item)" > -->
-<!-- 					<img :src="'images/'+item.Cover"/> -->
-<!-- 					<div class="listimgTitle"> -->
-<!-- 						<p>{{item.Title}}</p> -->
-<!-- 						<p>{{item.Subtitle}}</p> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
+				<card v-for="item in portfolio" v-bind:card="item" @check="checkCard" @click="checkCenter(card)"></card>
 
-		</div>
-		<p class="reel">Demo Reel</p>
+				<!-- 				<div class="listImg" v-for="item in portfolio" :key="item.ID" @click="checkCenter(item)" > -->
+				<!-- 					<img :src="'images/'+item.Cover"/> -->
+				<!-- 					<div class="listimgTitle"> -->
+				<!-- 						<p>{{item.Title}}</p> -->
+				<!-- 						<p>{{item.Subtitle}}</p> -->
+				<!-- 					</div> -->
+				<!-- 				</div> -->
 
-<!-- 		<video id="playVideos" class="video_" controls autoplay="autoplay" preload="auto"  :style="videoDisplay">
+			</div>
+			<p class="reel">Demo Reel</p>
+
+			<!-- 		<video id="playVideos" class="video_" controls autoplay="autoplay" preload="auto"  :style="videoDisplay">
 			<source id="playVideosss" :src="getVideoPath(video)" type="video/mp4">
 		</video> -->
 
 
-		<video-component v-bind:video="getVideoPath(video)" v-bind:videoDisplay="videoDisplay"></video-component>
+			<video-component v-bind:video="getVideoPath(video)" v-bind:videoDisplay="videoDisplay"></video-component>
 
-		<iframe :style="iframeDisplay" width="80%" height="600px" :src="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe :style="iframeDisplay" width="80%" height="600px" :src="video" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
 
 
-		<div class="contact">
-			<p class="contact_a">I occasionally take on freelance opportunities. Have an exciting project where you need some help? Send me over a message, and let's chat.</p>
-			<p class="contact_b">contact me</p>
-		</div>
-	</section>
-	<footer class="footer">
-		<div class="footerCon">
-			<p>© Copyright xindi Lu. All Rights Reserved</p>
-			<div class="imgList">
-				<img src="images/facebook.svg" alt="icon">
-				<img src="images/youtube.svg" alt="icon">
-				<img src="images/twitter.svg" alt="icon">
-				<img src="images/instagram.svg" alt="icon">
+			<div class="contact">
+				<p class="contact_a">I occasionally take on freelance opportunities. Have an exciting project where you
+					need some help? Send me over a message, and let's chat.</p>
+				<p class="contact_b">contact me</p>
+				<a class="ready_b about" target="_blank" href="./Resume.pdf" download="Resume.pdf">
+					Download Resume
+				</a>
 			</div>
+		</section>
+		<footer class="footer">
+			<div class="footerCon">
+				<p>© Copyright xindi Lu. All Rights Reserved</p>
+				<div class="imgList">
+					<a target="_blank" href="https://www.facebook.com/xindi.lu.37"><img src="images/facebook.svg"
+							alt="icon"></a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCTKEwrFbN2dLbPuQLAlQc2Q"><img src="images/youtube.svg" alt="icon"></a>
+					<a target="_blank" href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="icon"></a>
+					<a target="_blank" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="icon"></a>
+				</div>
+			</div>
+		</footer>
+		<div class="mak_s" id="maks">
+			<img id="maksImg" src="images/process.jpg" alt="">
 		</div>
-	</footer>
-	<div class="mak_s" id="maks">
-		<img id="maksImg" src="images/process.jpg" alt="">
-	</div>
-	<div class="lineNavWrap" style="display: none;">
-		<p @click="clickClose" class="close-btn"><img src="images/out.png"></p>
-		<div class="line-nav-box">
-<!-- 			<p @click="clickClose"><a href="index.html">HOME</a></p>
+		<div class="lineNavWrap" style="display: none;">
+			<p @click="clickClose" class="close-btn"><img src="images/out.png"></p>
+			<div class="line-nav-box">
+				<!-- 			<p @click="clickClose"><a href="index.html">HOME</a></p>
 			<p @click="clickClose"><a href="gallery.html">GALLERY</a></p>
 			<p @click="clickClose"><a href="about.html">ABOUT</a></p> -->
-			<nav-list v-for="item in navList" v-bind:name="item.name" v-bind:url="item.url"> </nav-list>	
+				<nav-list v-for="item in navList" v-bind:name="item.name" v-bind:url="item.url"> </nav-list>
+			</div>
 		</div>
 	</div>
-</div>
-<script src="js/main.js" type="module"></script>
-<script src="js/main.js" type="module"></script>
+	<script src="js/main.js" type="module"></script>
 </body>
+
 </html>

@@ -25,23 +25,22 @@
 						<div class="titleLeft">
 							<img src="images/logo.svg" alt="logo">
 						</div>
-						<ul	class="titleRight">
+						<ul class="titleRight">
 							<li><a href="index.html">HOME</a></li>
 							<li><a href="gallery.html">GALLERY</a></li>
 							<li><a href="about.html">ABOUT</a></li>
 						</ul>
-						<p class="lineNav"
-							@click="clickLine">
+						<p class="lineNav" @click="clickLine">
 							☰
 						</p>
 					</nav>
 				</header>
 				<div class="titleImg">
-					 <img src="images/banner.jpg" alt="bg">
+					<img src="images/banner.jpg" alt="bg">
 				</div>
 				<div class="imgTxt">
 					<p>Xindi Lu</p>
-					<p>UI-UX Designer & Multimedia Designer</p>
+					<p>UI Designer & Graphic Designer</p>
 				</div>
 			</div>
 			<section class="introduceWrap">
@@ -94,6 +93,9 @@
 				<div class="statWrap">
 					<p class="statWrap_a">READY TO DISCUSS YOUR PROJECT?</p>
 					<p class="statWrap_b">More Infomation About Me</p>
+					<a class="ready_b about" target="_blank" href="./Resume.pdf" download="Resume.pdf">
+						Download Resume
+					</a>
 				</div>
 				<div class="footerTop">
 					<div class="footerTitles">
@@ -104,7 +106,7 @@
 						<p><a href="gallery.html"><img src="images/diary_cover.jpg" alt="artwork"></a></p>
 						<p><a href="gallery.html"><img src="images/product_3.jpg" alt="artwork"></a></p>
 						<p><a href="gallery.html"><img src="images/sportsnet_cover.jpg" alt="artwork"></a></p>
-						<p><a href="gallery.html"><img src="images/couple_1.jpg" alt="artwork"></a></p>
+						<p><a href="gallery.html"><img src="images/couples_1.jpg" alt="artwork"></a></p>
 						<p><a href="gallery.html"><img src="images/reel_2.jpg" alt="artwork"></a></p>
 						<p><a href="gallery.html"><img src="images/cartoon_1.jpg" alt="artwork"></a></p>
 					</div>
@@ -116,20 +118,23 @@
 				<div class="footerCon">
 					<p>© Copyright xindi Lu. All Rights Reserved</p>
 					<div class="imgList">
-						<img src="images/facebook.svg" alt="icon">
-						<img src="images/youtube.svg" alt="icon">
-						<img src="images/twitter.svg" alt="icon">
-						<img src="images/instagram.svg" alt="icon">
+						<a target="_blank" href="https://www.facebook.com/xindi.lu.37"><img src="images/facebook.svg"
+								alt="icon"></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCTKEwrFbN2dLbPuQLAlQc2Q"><img src="images/youtube.svg" alt="icon"></a>
+						<a target="_blank" href="https://twitter.com/?lang=en"><img src="images/twitter.svg"
+								alt="icon"></a>
+						<a target="_blank" href="https://www.instagram.com/"><img src="images/instagram.svg"
+								alt="icon"></a>
 					</div>
 				</div>
 			</footer>
 			<div class="lineNavWrap" style="display: none;">
 				<p @click="clickClose" class="close-btn"><img src="images/out.png"></p>
 				<div class="line-nav-box">
-<!-- 					<p @click="clickClose"><a href="index.html">HOME</a></p>
+					<!-- 					<p @click="clickClose"><a href="index.html">HOME</a></p>
 					<p @click="clickClose"><a href="gallery.html">GALLERY</a></p>
 					<p @click="clickClose"><a href="about.html">ABOUT</a></p> -->
-					<nav-list v-for="item in navList" v-bind:name="item.name" v-bind:url="item.url"> </nav-list>	
+					<nav-list v-for="item in navList" v-bind:name="item.name" v-bind:url="item.url"> </nav-list>
 				</div>
 			</div>
 		</div>

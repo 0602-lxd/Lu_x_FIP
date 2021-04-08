@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -7,176 +8,194 @@
 	<link rel="stylesheet" href="css/master.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
+
 <body style="margin: 0;">
-<main id="app">
-	<!--		<h1 @click="clickHeader">{{ portfolio[0].Title }}</h1>-->
-	<!--		<h1 @click="clickHeader">{{ portfolio }}</h1>-->
-	<div>
-		<div class="wrap_"> 
-			<header class="title">
-				<nav class="titleCon">
-					<!-- <div class="titleLeft">
+	<main id="app">
+		<!--		<h1 @click="clickHeader">{{ portfolio[0].Title }}</h1>-->
+		<!--		<h1 @click="clickHeader">{{ portfolio }}</h1>-->
+		<div>
+			<div class="wrap_">
+				<header class="title">
+					<nav class="titleCon">
+						<!-- <div class="titleLeft">
 						<img src="icon/tm.png" alt="">
 						<div>
 							<p>inDi</p>
 							<p>originality</p>
 						</div>
 					</div> -->
-					<div class="titleLeft">
-						<img src="images/logo.svg" alt="logo">
-					</div>
-					<ul class="titleRight">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="gallery.html">GALLERY</a></li>
-						<li><a href="">ABOUT</a></li>
-					</ul>
-					<p class="lineNav" @click="clickLine">
-						☰
-					</p>
-				</nav>
-			</header>
-			<section class="introduces_">
-				<p class="introduces_a">Who am i ?</p>
-				<p class="introducesb">This is about me and my experiences.</p>
-				<p class="on">Hi, I’m Xindi Lu. </p>
-				<p class="on">A <span class="lover">Lover</span> of Multimedia </p>
-				<p class="on">Design</p>
+						<div class="titleLeft">
+							<img src="images/logo.svg" alt="logo">
+						</div>
+						<ul class="titleRight">
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="gallery.html">GALLERY</a></li>
+							<li><a href="">ABOUT</a></li>
+						</ul>
+						<p class="lineNav" @click="clickLine">
+							☰
+						</p>
+					</nav>
+				</header>
+				<section class="introduces_">
+					<p class="introduces_a">Who am i ?</p>
+					<p class="introducesb">This is about me and my experiences.</p>
+					<p class="on">Hi, I’m Xindi Lu. </p>
+					<p class="on">A <span class="lover">Lover</span> of UI/Graphic </p>
+					<p class="on">Design</p>
+				</section>
+			</div>
+
+			<section class="Selfie">
+				<img class="logo" src="images/dd.jpg" alt="me">
+				<div class="SelfieTxt">
+					<p>Hello everyone,welcome to my website, my name is xindi , but
+						you can call me Cindy, understand me and become my
+						friends!</p>
+					<p>I have a lot of hobbies, such as watching movies and
+						singing, but my favorite is painting. I am a UI, UX designer,
+						and also a Web designer. I graduated from . I am from
+						China, Province. I have always liked designing things, I like
+						creativity, and I feel a sense of accomplishment whenever
+						I design a work.</p>
+					<p>I have designed a lot of projects, it is about mobile phone
+						and web page design.</p>
+				</div>
 			</section>
-		</div>
-		
-		<section class="Selfie">
-			<img class="logo" src="images/dd.jpg" alt="me">
-			<div class="SelfieTxt">
-				<p>Hello everyone,welcome to my website, my name is xindi , but
-					you can call me Cindy, understand me and become my
-					friends!</p>
-				<p>I have a lot of hobbies, such as watching movies and
-					singing, but my favorite is painting. I am a UI, UX designer,
-					and also a Web designer. I graduated from . I am from
-					China, Province. I have always liked designing things, I like
-					creativity, and I feel a sense of accomplishment whenever
-					I design a work.</p>
-				<p>I have designed a lot of projects, it is about mobile phone
-					and web page design.</p>
-			</div>
-		</section>
-		<section class="Skills">
-			<p class="Skills_a">Skills</p>
-			<div class="SkillsCon">
-				<div>
-					<img src="images/iconmonstr-code-2-240.png" alt="icon">
-					<p class="SkillsCon_on">Coding</p>
-					<p class="SkillsCon_p">HTML</p>
-					<p class="SkillsCon_p">JavaScript</p>
-					<p class="SkillsCon_p">CSS</p>
-					<p class="SkillsCon_p">CSS</p>
-					<p class="SkillsCon_p">Node.Js</p>
-					<p class="SkillsCon_p">PHP</p>
-				</div>
-				<div>
-					<img src="images/iconmonstr-pen-4-240.png" alt="icon">
-					<p class="SkillsCon_on">Design</p>
-					<p class="SkillsCon_p">Illustrator</p>
-					<p class="SkillsCon_p">Photoshop</p>
-					<p class="SkillsCon_p">Adobe XD</p>
-					<p class="SkillsCon_p">Indesign</p>
-				</div>
-				<div>
-					<img src="images/iconmonstr-undo-4-240.png" alt="icon">
-					<p class="SkillsCon_on">Animation</p>
-					<p class="SkillsCon_p">Ciname 4D </p>
-					<p class="SkillsCon_p">After effect </p>
-					<p class="SkillsCon_p">Premire </p>
-				</div>
-				<div>
-					<img src="images/iconmonstr-gear-11-240.png" alt="icon">
-					<p class="SkillsCon_on">Tools</p>
-					<p class="SkillsCon_p">VS code</p>
-				</div>
-			</div>
-		</section>
-		<div class="direcƟon">
-			<div class="direconTop">
-				<p class="direconTop_a">Art Direction</p>
-				<p class="direconTop_b">
-					I love visually appealing designs, subtle details and brand guidelines combined to
-					innovative interfaces across various touch points became my daily companion.
-				</p>
-				<p class="direconTop_c">
-					This rough <span class="lover">framework</span> outlines my process of
-					developing digital experiences:
-				</p>
-			</div>
-			<div class="direconBot">
-				<p>1. RESEARCH and gather the present state</p>
-				<p>2. STRUCTURE setup and content of the project</p>
-				<p>3. CONCEPT AND STRATEGY</p>
-				<p>4. CREATE, evaluate and iterate deliverables</p>
-			</div>
-		</div>
-		<div class="ready">
-			<div class="ready_a">READY TO DISCUSS YOUR PROJECT?</div>
-			<div class="ready_b">
-				More Infomation About Me
-			</div>
-		</div>
-		<div class="user">
-			<div class="userMain">
-				<div class="userLeft">
-					<div class="userInputBox">
-						<label for="u-name"><p class="userInputTitle">Name</p></label>
-						<input id="u-name" type="text" placeholder="Whart`s your name?" v-model="form.name">
+			<section class="Skills">
+				<p class="Skills_a">Skills</p>
+				<div class="SkillsCon">
+					<div>
+						<img src="images/iconmonstr-code-2-240.png" alt="icon">
+						<p class="SkillsCon_on">Coding</p>
+						<p class="SkillsCon_p">HTML</p>
+						<p class="SkillsCon_p">JavaScript</p>
+						<p class="SkillsCon_p">CSS</p>
+						<p class="SkillsCon_p">CSS</p>
+						<p class="SkillsCon_p">Node.Js</p>
+						<p class="SkillsCon_p">PHP</p>
 					</div>
-					<div class="userInputBox">
-						<label for="u-email" ><p class="userInputTitle">Email</p></label>
-						<input id="u-email"  type="text" placeholder="Whart`s your Email?"  v-model="form.email">
+					<div>
+						<img src="images/iconmonstr-pen-4-240.png" alt="icon">
+						<p class="SkillsCon_on">Design</p>
+						<p class="SkillsCon_p">Illustrator</p>
+						<p class="SkillsCon_p">Photoshop</p>
+						<p class="SkillsCon_p">Adobe XD</p>
+						<p class="SkillsCon_p">Indesign</p>
 					</div>
-					<div class="userInputBox">
-						<label for="e-subject"><p class="userInputTitle">Subject</p></label>
-						<select id="e-subject"   v-model="form.subject">
+					<div>
+						<img src="images/iconmonstr-undo-4-240.png" alt="icon">
+						<p class="SkillsCon_on">Animation</p>
+						<p class="SkillsCon_p">Ciname 4D </p>
+						<p class="SkillsCon_p">After effect </p>
+						<p class="SkillsCon_p">Premire </p>
+					</div>
+					<div>
+						<img src="images/iconmonstr-gear-11-240.png" alt="icon">
+						<p class="SkillsCon_on">Tools</p>
+						<p class="SkillsCon_p">VS code</p>
+					</div>
+				</div>
+			</section>
+			<div class="direcƟon">
+				<div class="direconTop">
+					<p class="direconTop_a">Work Contact</p>
+					<p class="direconTop_b">
+						Telephone number：647-809-7236 </br>
+						Email: Cindylxd123@gmail.com </br>
+						You can contact me directly or leave me a message through my website! </br>
+					</p>
+
+					<p class="direconTop_a">Art Direction</p>
+					<p class="direconTop_b">
+						I love visually appealing designs, subtle details and brand guidelines combined to
+						innovative interfaces across various touch points became my daily companion.
+					</p>
+					<p class="direconTop_c">
+						This rough <span class="lover">framework</span> outlines my process of
+						developing digital experiences:
+					</p>
+				</div>
+				<div class="direconBot">
+					<p>1. RESEARCH and gather the present state</p>
+					<p>2. STRUCTURE setup and content of the project</p>
+					<p>3. CONCEPT AND STRATEGY</p>
+					<p>4. CREATE, evaluate and iterate deliverables</p>
+				</div>
+			</div>
+			<div class="ready">
+				<div class="ready_a">READY TO DISCUSS YOUR PROJECT?</div>
+				<a class="ready_b " target="_blank" href="./Resume.pdf" download="Resume.pdf">
+					Download Resume
+				</a>
+			</div>
+			<div class="user">
+				<div class="userMain">
+					<div class="userLeft">
+						<div class="userInputBox">
+							<label for="u-name">
+								<p class="userInputTitle">Name</p>
+							</label>
+							<input id="u-name" type="text" placeholder="Whart`s your name?" v-model="form.name">
+						</div>
+						<div class="userInputBox">
+							<label for="u-email">
+								<p class="userInputTitle">Email</p>
+							</label>
+							<input id="u-email" type="text" placeholder="Whart`s your Email?" v-model="form.email">
+						</div>
+						<div class="userInputBox">
+							<label for="e-subject">
+								<p class="userInputTitle">Subject</p>
+							</label>
+							<select id="e-subject" v-model="form.subject">
 								<option disabled selected value="">Whart`s your Subject?</option>
 								<option value="Business Inquiry">Business Inquiry</option>
 								<option value="Hello!">Hello!</option>
 								<option value="Report a Bug">Report a Bug</option>
-						</select> 
+							</select>
+						</div>
+					</div>
+					<div class="userRight">
+						<div class="userInputBox">
+							<label for="e-message">
+								<p class="userInputTitle">Message</p>
+							</label>
+							<input id="e-message" class="textarea" placeholder="How can i help?"
+								v-model="form.message" />
+						</div>
 					</div>
 				</div>
-				<div class="userRight">
-					<div class="userInputBox">
-						<label for="e-message"><p class="userInputTitle">Message</p></label>
-						<input id="e-message"  class="textarea" placeholder="How can i help?" v-model="form.message"/ >
+				<div class="submit">
+					<div class="submitBtn" @click="checkSubmit">
+						Submit
 					</div>
 				</div>
 			</div>
-			<div class="submit">
-				<div class="submitBtn" @click="checkSubmit">
-					Submit
+			<footer class="footers_">
+				<div class="footerCon">
+					<p>© Copyright xindi Lu. All Rights Reserved</p>
+					<div class="imgList">
+						<a target="_blank" href="https://www.facebook.com/xindi.lu.37"><img src="images/facebook.svg" alt="icon"></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCTKEwrFbN2dLbPuQLAlQc2Q"><img src="images/youtube.svg" alt="icon"></a>
+						<a target="_blank" href="https://twitter.com/?lang=en"><img src="images/twitter.svg" alt="icon"></a>
+						<a target="_blank" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="icon"></a>
+					</div>
 				</div>
-			</div>
-		</div>
-		<footer class="footers_">
-			<div class="footerCon">
-				<p>© Copyright xindi Lu. All Rights Reserved</p>
-				<div class="imgList">
-					<img src="images/facebook.svg" alt="icon">
-					<img src="images/youtube.svg" alt="icon">
-					<img src="images/twitter.svg" alt="icon">
-					<img src="images/instagram.svg" alt="icon">
-				</div>
-			</div>
-		</footer>
-		<div class="lineNavWrap" style="display: none;">
-			<p @click="clickClose" class="close-btn"><img src="images/out.png"></p>
-			<div class="line-nav-box">
-<!-- 				<p @click="clickClose"><a href="index.html">HOME</a></p>
+			</footer>
+			<div class="lineNavWrap" style="display: none;">
+				<p @click="clickClose" class="close-btn"><img src="images/out.png"></p>
+				<div class="line-nav-box">
+					<!-- 				<p @click="clickClose"><a href="index.html">HOME</a></p>
 				<p @click="clickClose"><a href="gallery.html">GALLERY</a></p>
 				<p @click="clickClose"><a href="about.html">ABOUT</a></p> -->
-				<nav-list v-for="item in navList" v-bind:name="item.name" v-bind:url="item.url"> </nav-list>				
+					<nav-list v-for="item in navList" v-bind:name="item.name" v-bind:url="item.url"> </nav-list>
+				</div>
 			</div>
 		</div>
-	</div>
-</main>
+	</main>
 
 </body>
 <script src="js/main.js" type="module"></script>
+
 </html>

@@ -691,3 +691,18 @@
     color: #fff;
   }
 }
+/* 加的样式 */
+@media (max-width: 1300px){
+    .about.ready_b {
+        width: 46vw;
+    }
+}
+.about.ready_b {
+    background: #fff !important;
+    color: #000 !important;
+    border: 4px solid #000 !important;
+    width: 20%;
+    padding: 10px 0;
+    margin: 30px auto 0;
+    cursor: pointer;
+}
